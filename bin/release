@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+cat &lt;&lt;EOF
+---
+config_vars:
+LIBRARY_PATH: $LIBRARY_PATH:/app/vendor/libccv
+LD_LIBRARY_PATH: $LD_LIBRARY_PATH:/app/vendor/libccv
+EOF
