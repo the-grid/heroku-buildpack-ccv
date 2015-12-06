@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
-echo "-----&gt; Installing libccv"
+echo "-----> Installing libccv"
 cd $1
-curl http://void.cc/libccv-0.1.0.tar.gz -s -O
-# make a directory to untar (like unzip) the binary
+curl http://void.cc/libccv-0.1.1.tar.gz -s -O
 mkdir -p vendor/libccv
-tar -C vendor/libccv -xvf libccv-0.1.0.tar.gz
+tar -C vendor/libccv -xvzf libccv-0.1.1.tar.gz
