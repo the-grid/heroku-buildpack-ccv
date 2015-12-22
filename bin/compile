@@ -4,5 +4,5 @@ echo "-----> Installing libccv"
 cd $1
 curl http://void.cc/libccv-0.1.1.tar.gz -s -O
 mkdir -p $HOME/vendor/libccv
-tar -C $HOME/vendor/libccv -xvzf libccv-0.1.1.tar.gz
+tar -C $HOME/vendor/libccv -xzf libccv-0.1.1.tar.gz
 export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:$HOME/vendor/libccv"
