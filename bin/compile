@@ -7,7 +7,19 @@ mkdir -p $HOME/vendor/libccv
 tar -C $HOME/vendor/libccv -xvzf libccv-0.1.1.tar.gz
 export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:$HOME/vendor/libccv"
 
-echo "Listing..."
-ls $HOME/vendor/libccv
+echo "LIBRARY_PATH"
+echo $LIBRARY_PATH
+
+echo "LD_LIBRARY_PATH:"
 echo $LD_LIBRARY_PATH
-echo
+
+echo "PKG_CONFIG_PATH"
+echo $PKG_CONFIG_PATH
+
+echo "pkg-config pangocairo"
+pkg-config --libs pangocairo
+pkg-config --cflags pangocairo
+
+echo "pkg-config cairo"
+pkg-config --libs cairo
+pkg-config --cflags cairo
