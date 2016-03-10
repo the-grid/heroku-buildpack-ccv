@@ -16,8 +16,8 @@ git clone https://github.com/liuliu/ccv.git
 cd ccv/lib
 git checkout $CCV_REVISION
 ./configure
-make
-cd ~
+make j4
+cd -
 tar czf libccv-${VERSION}-${TARGET}.tgz -C ccv/lib .
 
 if [ -z "$FTP_PASSWORD" ];
