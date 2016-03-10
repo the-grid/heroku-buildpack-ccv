@@ -1,0 +1,16 @@
+language: node_js
+node_js:
+- '4.2'
+sudo: false
+addons:
+  apt:
+    sources:
+    - ubuntu-toolchain-r-test
+    packages:
+    - g++-4.8
+    - libgif-dev
+    - libjpeg8-dev
+    - libpng12-dev
+    - libglib2.0-dev
+script:
+- OUT_DIR=`pwd` TARGET=travis VERSION=`git describe --tags` ./build.sh
