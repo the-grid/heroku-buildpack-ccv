@@ -26,5 +26,6 @@ deploy:
   app: imgflo-dependencies14
   on:
     repo: jonnor/heroku-buildpack-ccv
+    tags: true
   run:
   - TARGET=heroku VERSION=`git describe --tags` ./build.sh
