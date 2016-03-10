@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 echo "-----> Installing libccv"
 
-version=0.2.3
+version=0.2.4
 cd $1
 curl ftp://vps.jonnor.com/imgflo/libccv-$version-heroku.tgz -s -O
 mkdir -p $HOME/vendor/libccv
