@@ -18,8 +18,7 @@ git checkout $CCV_REVISION
 ./configure
 make
 cd ~
-tar czf libccv-0.1.0.tar.gz -C ccv/lib .
-curl -T libccv-0.1.0.tar.gz -u USERNAME:PASSWORD ftp://REMOTE_HOST
+tar czf libccv-${VERSION}-${TARGET}.tgz -C ccv/lib .
 
 if [ -z "$FTP_PASSWORD" ];
 then
