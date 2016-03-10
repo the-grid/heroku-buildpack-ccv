@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 echo "-----> Installing libccv"
 
-version=0.2.0
+version=0.2.1
 cd $1
-curl ftp://vps.jonnor.com/imgflo/libccv-$version.tgz -s -O
+curl ftp://vps.jonnor.com/imgflo/libccv-$version-heroku.tgz -s -O
 mkdir -p $HOME/vendor/libccv
-tar -C $HOME/vendor/libccv -xzf libccv-$version.tar.gz
+tar -C $HOME/vendor/libccv -xzf libccv-*.tgz
 export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:$HOME/vendor/libccv"
