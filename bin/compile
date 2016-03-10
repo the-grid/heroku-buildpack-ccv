@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 echo "-----> Installing libccv"
 
-version=0.1.1
+version=0.2.0
 cd $1
-curl https://s3-us-west-2.amazonaws.com/cdn.thegrid.io/caliper/libvips/libccv-$version.tar.gz -s -O
+curl ftp://vps.jonnor.com/imgflo/libccv-$version.tgz -s -O
 mkdir -p $HOME/vendor/libccv
 tar -C $HOME/vendor/libccv -xzf libccv-$version.tar.gz
 export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:$HOME/vendor/libccv"
