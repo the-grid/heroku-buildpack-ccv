@@ -14,6 +14,7 @@ addons:
     - libglib2.0-dev
 script:
 - OUT_DIR=`pwd` TARGET=travis VERSION=`git describe --tags` ./build.sh
+- rm -rf ./app
 env:
   global:
   - secure: KORfxiPT9MTJcjgRltPJ+irmPmh5veOmrYI+c2LJA8eJHQdStOCaefER8Of/j0axmLIbnlrZYkS7+91HZKhVU1G62tt/f7WMijSytPXrU8NLUhOQrLNGaQPT4akV5vMU4s7hzXNK2hw+ZPezgKBhyCiiw5Ex/0aFL1tPmbEhyODMb2l3zkYurbpvDOBmJKvdgRYLKkH0O8CuuhoyoSAvjdanofZT34SZWzJan6dViJllkLWNI8S0QHqXEb1ISQma6/Mvcjz4D5t0RJaKy0RAxCHwfnCX5fzZhhqwhnRKRBKmQMh87E5DKRDKLdqZf4WBzzqq7D7Pf5jBVIhsPvZaEYpKktPKSNCbX8JFw+Un7tpC8QyuA3rrOv1efRstra7Mpvdm0tLuUMdRhwCfQIIwBWdwd0Nsvw8z26yNUY0h/0gTilaTJca8/imihon6mHH4hsi4eYtnqeSatcq47K0Sz8fpTlay4v8TemD/rqiSW0mKKN6jHRTAFquDu2X+CxIjmZ/ShCCWhjpEQGkJTvicvfm+CJDvYciBXfxCPaju8jqgcTdcrx0b71OHOj2rvRDDZZ0QDTovBspUG1u8OQKrZarejo7EhxV3VjqPSFnpoZz97igKdbxfWzTBLgcWq5/IWRDIR4kFupbI9cU7VMDTBLD4gi2kndLL/waXMRDic6s=
