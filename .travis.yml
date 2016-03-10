@@ -23,7 +23,7 @@ deploy:
   provider: heroku
   api_key:
     secure: zAkG4M5ZS7Ar1IyUvhD5bGqXgrm1H/nhIeaHcyCAWR9Fm3ZleqdOfvuqEotiz/bcJPlrnrWsrFHL4Vxvl9Ia4/g7vUrMvyeIjG9oV8g6z+xvfQ0/sB+UMTuMJEKxLz7VXIbsEQisxv8o/H+tuKcX5P96cW/lgWyGWq0agjT0wwNduBKkLnJfILYbngKrZL9LMfneiUbzAf/LFk+dAfVvTHRD/Oe66tSrj+bcnW/buhnBZ8nlskVkYScvOwBhw0IWpgBEBT76hqH2kEcdHZJr4qD7MZR4bWgRXtS4snX7REWeeqm0aDFe7sFZY6IKBWYi2rCyhcCN8fwdkMAERSL1ACC3Fg5vbcA6dSQWE+sHmKiesGvl+o4JPADnddF6FZ9mZBFeoeTnxltgutwfcJVEpMcVnkQh/l7vilmKcOczmveSy0Y3zN2UuFeF0+s2ToJQfeM9MuwxDY/5+Kje6tDe4SgnnR8WlY51PYWFxMkK6reDugPsEAjwsyPtAhs7IVc2JmYUfwp2uuxNYax4wrQzYE22cefySwG4tVeUAflvWD+QRMFR2mrdPxp/d+k8RxOXoWW1w6btykZdb4FYVjume3BLCB/xdNmX/xXxyAquQeRMRePtrCwIV5LTRjAv9GlJaep+n45l2kp+v0H+5bS98UpZndtrnf/RKuwZ8rQoOyk=
-  app: imgflo-depdendencies14
+  app: imgflo-dependencies14
   on:
     repo: jonnor/heroku-buildpack-ccv
   run:
