@@ -1,17 +1,20 @@
 #!/bin/bash
 
-# On your local machine, create a Heroku app to stage the buildpack
-#
-#    heroku create buildpack-stage
-#
-# And ssh to it
-#
-#    heroku run bash --app buildpack-stage
-#
-# Now run the following script, changing username and host as expected...
+# These should be set from the outside. A git version and heroku/travis respectively
+if [ -z "$VERSION" ]
+then
+    VERSION="unknown"
+fi
+if [ -z "$TARGET" ]
+then
+    TARGET="unknown"
+fi
+
+CCV_REVISION=29b2bca
 
 git clone https://github.com/liuliu/ccv.git
 cd ccv/lib
+git checkout $CCV_REVISION
 ./configure
 make
 cd ~
