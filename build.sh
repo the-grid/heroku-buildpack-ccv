@@ -20,3 +20,10 @@ make
 cd ~
 tar czf libccv-0.1.0.tar.gz -C ccv/lib .
 curl -T libccv-0.1.0.tar.gz -u USERNAME:PASSWORD ftp://REMOTE_HOST
+
+if [ -z "$FTP_PASSWORD" ];
+then
+    echo "FTP_PASSWORD not provided, skipping upload";
+else
+    curl --ftp-create-dirs -T libccv-${VERSION}-${TARGET}.tgz -u ${FTP_USER}:${FTP_PASSWORD} ${FTP_SERVER}/
+fi
