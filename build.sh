@@ -16,7 +16,7 @@ git clone https://github.com/liuliu/ccv.git
 cd ccv/lib
 git checkout $CCV_REVISION
 ./configure
-make j4
+make -j4
 cd -
 tar czf libccv-${VERSION}-${TARGET}.tgz -C ccv/lib .
 
