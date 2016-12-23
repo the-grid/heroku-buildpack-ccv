@@ -19,6 +19,7 @@ function putS3 {
     -H "$acl" \
     -H "Authorization: AWS ${aws_id}:$signature" \
     "https://$aws_bucket.s3.amazonaws.com$aws_path$file"
+  echo "Uploaded to https://$aws_bucket.s3.amazonaws.com$aws_path$file"
 }
 
 # These should be set from the outside. A git version and heroku/travis respectively
@@ -46,4 +47,5 @@ then
     echo "Amazon API Token not provided, skipping upload";
 else
     putS3 "libccv-${VERSION}-${TARGET}.tgz" "/bundles/" $AMAZON_API_ID $AMAZON_API_TOKEN $AMAZON_API_BUCKET
+    echo "Success!"
 fi
