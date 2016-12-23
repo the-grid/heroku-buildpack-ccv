@@ -24,7 +24,7 @@ deploy:
   provider: heroku
   app: buildpack-stage
   on:
-    repo: automata/heroku-buildpack-ccv
+    repo: the-grid/heroku-buildpack-ccv
     tags: true
   run:
   - TARGET=heroku VERSION=`git describe --tags` ./build.sh
