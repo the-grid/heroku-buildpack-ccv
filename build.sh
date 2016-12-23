@@ -32,7 +32,7 @@ then
     TARGET="unknown"
 fi
 
-CCV_REVISION=29b2bca
+CCV_REVISION=07fc691
 
 git clone https://github.com/liuliu/ccv.git
 cd ccv/lib
