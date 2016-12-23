@@ -38,9 +38,13 @@ git clone https://github.com/liuliu/ccv.git
 cd ccv/lib
 git checkout $CCV_REVISION
 ./configure
+echo "Configured..."
 make -j4
+echo "Built..."
 cd -
+echo "Right dir..."
 tar czf libccv-${VERSION}-${TARGET}.tgz -C ccv/lib .
+echo "Packing..."
 
 if [ -z "$AMAZON_API_TOKEN" ];
 then
@@ -49,3 +53,4 @@ else
     putS3 "libccv-${VERSION}-${TARGET}.tgz" "/bundles/" $AMAZON_API_ID $AMAZON_API_TOKEN $AMAZON_API_BUCKET
     echo "Success!"
 fi
+echo "End."
