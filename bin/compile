@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 echo "-----> Installing libccv"
 
-version=0.2.9
+version=0.2.10
 cd $1
 curl https://s3-us-west-2.amazonaws.com/caliper-tests/bundles/libccv-$version-heroku.tgz -s -O
 mkdir -p $HOME/vendor/libccv
